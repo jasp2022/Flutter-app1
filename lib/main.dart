@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_app1/screens/search_screen.dart';
+import 'package:sena_app/screens/search_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -37,10 +37,6 @@ class HomePage extends StatelessWidget{
             ],
           ),
          body: Center(
-
-
-        
-
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
@@ -48,20 +44,15 @@ class HomePage extends StatelessWidget{
               style: TextStyle(fontSize: 30, color: Colors.blue, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 20,),
-              Image.network('https://www.sena.edu.co/es-co/Noticias/PublishingImages/Foto_1%20(7).jpg', width: 200, height: 200,),
+              Image.asset('assets/images/logo.png', width: 200, height: 200,),
               const SizedBox(height: 20,),
               const Text(
                 '¡Bienvenido a mi primer proyecto!',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
-
           ]
           ),
           ),
-
-
-
-
       );
   }
 }
